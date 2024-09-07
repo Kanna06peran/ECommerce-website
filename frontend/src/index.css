@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{margin: 0px;}
+body {font-size: 16px;
+  background-color: #EBEBEB;
+  padding: 20px;
+  font-family:  Arial, sans-serif,"Poppins";
+
+  
+}
+
