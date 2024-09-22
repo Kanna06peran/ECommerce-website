@@ -14,7 +14,16 @@ app.use(express.json());
 app.use(cors());
 
 //Database  connection with MongoDB
-mongoose.connect("mongodb+srv://kannaperan328:fyhPlOfLzy908CZh@cluster0.nlwzw.mongodb.net/e-commerce");
+mongoose.connect("mongodb+srv://kannaperan328:fyhPlOfLzy908CZh@cluster0.nlwzw.mongodb.net/e-commerce")
+.then(function(){
+    console.log("Database Connected...")
+}).catch(function(){
+    console.log("Failed to Connect")
+})
+
+// mongoose.connect("mongodb://kannaperan328:fyhPlOfLzy908CZh@cluster0-shard-00-00.mongodb.net:27017,cluster0-shard-00-01.mongodb.net:27017,cluster0-shard-00-02.mongodb.net:27017/e-commerce?ssl=true&replicaSet=atlas-xyz-shard-0&authSource=admin&retryWrites=true&w=majority")
+
+
 
 //API Creation
 
