@@ -22,7 +22,7 @@ function CartItems(){
             <hr/>
             {all_product.map((e)=>{
                 if(CartItems[e.id]>0){
-                  return  <div>
+                  return (<div>
                     <div className="cartitems-format cartitems-format-main">
                   <img src={e.image} alt="" className="carticon-product-icon"></img>
                   <p>{e.name}</p>
@@ -32,7 +32,7 @@ function CartItems(){
                   <img src={remove_icon} onClick={()=>{removeFromCart()}} alt=""></img>
               </div>
               <hr/>
-        </div>
+        </div>)
               
                 }
                 return null;

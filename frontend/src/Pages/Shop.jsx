@@ -11,7 +11,7 @@ function Shop(){
         <Popular/>
         <Offers/>
         <NewCollection/>
-        <hr/>
+        
         <NewsLetter/>
     </div>)
 }

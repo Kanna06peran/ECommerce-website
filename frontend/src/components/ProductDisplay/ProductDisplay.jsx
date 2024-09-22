@@ -8,8 +8,10 @@ import { ShopContext } from "../Context/ShopContext";
 
 function ProductDisplay(props){
     const {product} = props;
-    const {addToCart} = useContext(ShopContext)
-    return(<div className="productdisplay">
+    const {addToCart} = useContext(ShopContext);
+
+    return(
+    <div className="productdisplay">
         <div className="productdisplay-left">
             <div className="productdisplay-img-list">
                 <img src={product.image} alt=""></img>

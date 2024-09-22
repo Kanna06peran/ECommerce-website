@@ -36,14 +36,9 @@ function Navbar() {
             <Link onClick={()=>{setMenu("womens")}} className='list-none px-5' to={"/women"}>Women{menu ==="womens"?<hr/>:<></>}</Link>
             <Link onClick={()=>{setMenu("kids")}} className='list-none px-5' to={"/kids"}>Kids{menu ==="kids"?<hr/>:<></>}</Link>
             
-        
-            <Link onClick={()=>{setMenu("about")}} className='list-none px-5'>About{menu ==="about"?<hr/>:<></>}</Link>
-
-            <div className="nav-login-cart">
+           <div className="nav-login-cart">
               {localStorage.getItem('auth-token')?<button onClick={()=>{localStorage.removeItem('auth-token');window.location.replace('/')}}>Logout</button>: <Link to='/login'><button className='button-style hidden md:block'>Login</button></Link>}
-             
-            
-            <Link to='/cart'><img className='flex items-center ' src={CartIcon} alt='' style={{height:40,width:50,paddingLeft:10}} ></img></Link>
+              <Link to='/cart'> <img className='flex items-center ' src={CartIcon} alt='' style={{height:40,width:50,paddingLeft:10}} ></img></Link>
 
             </div>
            

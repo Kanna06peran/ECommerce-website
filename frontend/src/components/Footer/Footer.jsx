@@ -6,9 +6,10 @@ import whatsapp_icon from "../Assets/whatsapp_icon.png"
 
 function Footer(){
     return(<div className="footer">
-        <div className="footer-logo">
+        <div className="footer-logo" >
             <img src={footer_logo} alt=""/>
             <p>SHOPPER</p>
+            <hr></hr>
             <ul className="footer-links">
                 <li>Company</li>
                 <li>Products</li>
